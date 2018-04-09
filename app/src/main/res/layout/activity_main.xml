@@ -24,4 +24,19 @@
         app:circle_color="#FF4081"
         android:background="#000000" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <com.neil.demo.widget.BubbleSeekBar
+            android:max="50"
+            style="@style/SeekBar"
+            android:thumbOffset="10dp"
+            android:layout_width="match_parent"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
 </LinearLayout>
