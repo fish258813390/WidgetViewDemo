@@ -80,9 +80,8 @@ public class BubbleSeekBar extends AppCompatSeekBar {
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
+    protected synchronized void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
         mText = getProgress() + "%";
         mTextWidth = mPaint.measureText(mText);
         Rect bounds = this.getProgressDrawable().getBounds();
