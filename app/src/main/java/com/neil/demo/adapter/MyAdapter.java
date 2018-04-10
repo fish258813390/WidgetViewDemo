@@ -44,6 +44,10 @@ public class MyAdapter extends RecyclerView.Adapter {
         return listItem.size();
     }
 
+    public ArrayList<HashMap<String, Object>> getData(){
+        return listItem;
+    }
+
     // 定义Viewholder
     class Viewholder extends RecyclerView.ViewHolder {
         private TextView mTitle, mText;
