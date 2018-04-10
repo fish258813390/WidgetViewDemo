@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Kawaii_LoadingView">
+
+        <!-- 方块行数量 -->
+        <attr name="lineNumber" format="integer"/>
+        <!-- 半个方块的宽度 -->
+        <attr name="half_BlockWidth" format="dimension"/>
+        <!-- 方块间隔宽度 -->
+        <attr name="blockInterval" format="dimension"/>
+        <!-- 移动方块的圆角半径 -->
+        <attr name="moveBlock_Angle" format="float"/>
+        <!-- 固定方块的圆角半径 -->
+        <attr name="fixBlock_Angle" format="float"/>
+        <!-- 方块颜色 -->
+        <attr name="blockColor" format="color"/>
+        <!-- 移动方块的初始位置(即空白位置) -->
+        <attr name="initPosition" format="integer"/>
+        <!-- 动画旋转方向是否 = 顺时针 -->
+        <attr name="isClock_Wise" format="boolean"/>
+        <!-- 移动方块的移动速度 -->
+        <attr name="moveSpeed" format="integer"/>
+        <!-- 移动方块动画的差值器 -->
+        <attr name="move_interpolator" format="reference"/>
+
+    </declare-styleable>
+
+</resources>
