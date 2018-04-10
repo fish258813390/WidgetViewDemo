@@ -2,6 +2,7 @@ package com.neil.demo.adapter.decoration;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -9,6 +10,7 @@ import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.neil.demo.R;
 import com.neil.demo.adapter.MyAdapter;
 
 import java.util.ArrayList;
@@ -16,8 +18,11 @@ import java.util.HashMap;
 
 /**
  * 事件轴的装饰类
- *
+ * <p>
  * 可以将数据源从adpter 中获取，实现动态化
+ * 可以扩展 将轴点改成图标
+ *
+ * 参考  https://www.jianshu.com/p/655ea359e3db
  * Created by neil on 2018/4/10 0010.
  */
 public class DividerItemDecoration2 extends RecyclerView.ItemDecoration {
@@ -62,6 +67,8 @@ public class DividerItemDecoration2 extends RecyclerView.ItemDecoration {
         itemView_topinterval = 50;
 
         cicle_radius = 10;
+
+        mIcon = BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_launcher);
     }
 
     @Override
@@ -99,6 +106,7 @@ public class DividerItemDecoration2 extends RecyclerView.ItemDecoration {
             float centery = child.getTop() - itemView_topinterval + (itemView_topinterval + child.getHeight()) / 2;
             // 绘制轴点圆
             c.drawCircle(centerx, centery, cicle_radius, mPaint);
+//            c.drawBitmap(mIcon, centerx - cicle_radius, centery - cicle_radius, mPaint);
 
             /**
              * 绘制上半轴线
