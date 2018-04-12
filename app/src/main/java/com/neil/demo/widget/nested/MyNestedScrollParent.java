@@ -102,7 +102,8 @@ public class MyNestedScrollParent extends LinearLayout implements NestedScrollin
      * @param target
      * @param dx
      * @param dy
-     * @param consumed
+     * @param consumed 长度为2，第一个元素是父View消费的x方向的滚动距离，第二个元素是父View消费的y方向的滚动距离
+     *                 如果这两个值不为0，则子View需要对滚动的量进行一些修正
      */
     @Override
     public void onNestedPreScroll(View target, int dx, int dy, int[] consumed) {
