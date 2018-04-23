@@ -8,10 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
-
     <style name="SeekBar">
-
         <item name="android:paddingLeft">15dp</item>
         <item name="android:paddingRight">15dp</item>
         <item name="android:layout_width">match_parent</item>
@@ -24,8 +21,24 @@
         <item name="android:thumb">@drawable/seekbar_thumb</item>
         <item name="android:isScrollContainer">true</item>
         <item name="android:fadeScrollbars">true</item>
-
-
     </style>
+
+    <!-- 自定义view CustomTitleView -->
+    <!--<declare-styleable name="CustomTitleView">-->
+        <!--<attr name="titleText" format="string" />-->
+        <!--<attr name="titleTextColor" format="color" />-->
+        <!--<attr name="titleTextSize" format="dimension" />-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="CustomTitleView2">
+        <attr name="titleText" format="string" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="image" format="reference" />
+        <attr name="imageScaleType" format="integer">
+            <enum name="fillXY" value="0" />
+            <enum name="center" value="1" />
+        </attr>
+    </declare-styleable>
 
 </resources>

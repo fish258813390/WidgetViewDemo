@@ -17,6 +17,7 @@ import com.neil.demo.R;
 public class CircleView extends View {
 
     private Paint mPaint1;
+    private Paint mPaint2;
     private int mColor;
 
     public CircleView(Context context) {
@@ -53,6 +54,11 @@ public class CircleView extends View {
         mPaint1.setColor(mColor); // 传入颜色
         mPaint1.setStrokeWidth(5f);
         mPaint1.setStyle(Paint.Style.FILL);
+
+        mPaint2 = new Paint();
+        mPaint2.setColor(Color.BLACK); // 传入颜色
+        mPaint2.setStrokeWidth(5f);
+        mPaint2.setStyle(Paint.Style.FILL);
     }
 
     // 复写onDraw()进行绘制
@@ -75,5 +81,6 @@ public class CircleView extends View {
         // 画出圆(蓝色)
         // 圆心 = 控件中央
         canvas.drawCircle(paddingLeft + width / 2, paddingTop + height / 2, r, mPaint1);
+        canvas.drawText("反反复复",paddingLeft + width / 2,paddingTop + height / 2,mPaint2);
     }
 }

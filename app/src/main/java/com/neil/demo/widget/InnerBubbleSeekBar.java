@@ -20,7 +20,7 @@ public class InnerBubbleSeekBar extends android.support.v7.widget.AppCompatSeekB
 
     private TextPaint mTextPaint; // 文本画笔
     private String mText; // 文本内容
-    private Rect mTextBound; // 文本所在的矩阵
+    private Rect mTextBound; // 文本所在的矩阵,文本的宽、高
     private int mWidth; // 空间宽度
     private int mHeight; // 控件高度
 
