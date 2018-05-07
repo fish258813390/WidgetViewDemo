@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.neil.demo.widget.restart.FlowLayoutView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff00ff">
+
+        <TextView
+            style="@style/text_flat_01"
+            android:background="@drawable/flag_03"
+            android:text="welcome"
+            android:textColor="#43BBE7" />
+
+
+        <TextView
+            style="@style/text_flat_01"
+            android:background="@drawable/flag_03"
+            android:text="工程师"
+            android:textColor="#43BBE7" />
+
+
+        <TextView
+            style="@style/text_flat_01"
+            android:background="@drawable/flag_03"
+            android:text="我真是可以的"
+            android:textColor="#43BBE7" />
+
+
+        <TextView
+            style="@style/text_flat_01"
+            android:background="@drawable/flag_03"
+            android:text="你觉得呢"
+            android:textColor="#43BBE7" />
+
+
+        <TextView
+            style="@style/text_flat_01"
+            android:background="@drawable/flag_03"
+            android:text="不要只知道挣钱"
+            android:textColor="#43BBE7" />
+
+
+        <TextView
+            style="@style/text_flat_01"
+            android:background="@drawable/flag_03"
+            android:text="努力中"
+            android:textColor="#43BBE7" />
+
+
+    </com.neil.demo.widget.restart.FlowLayoutView>
+
+</LinearLayout>

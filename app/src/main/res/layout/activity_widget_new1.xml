@@ -6,13 +6,13 @@
     android:orientation="vertical">
 
     <!--<com.neil.demo.widget.CustomTitleView-->
-        <!--android:id="@+id/ct1"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:padding="10dp"-->
-        <!--custom:titleText="123456"-->
-        <!--custom:titleTextColor="#ff0000"-->
-        <!--custom:titleTextSize="20sp" />-->
+    <!--android:id="@+id/ct1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="10dp"-->
+    <!--custom:titleText="123456"-->
+    <!--custom:titleTextColor="#ff0000"-->
+    <!--custom:titleTextSize="20sp" />-->
 
 
     <com.neil.demo.widget.CustomTitleView2
@@ -23,10 +23,32 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:padding="10dp"
+        android:visibility="gone"
         custom:image="@mipmap/ic_launcher"
         custom:imageScaleType="center"
         custom:titleText="12344"
         custom:titleTextColor="#ff0000"
         custom:titleTextSize="20sp" />
+
+
+    <com.neil.demo.widget.CustomProgressBar
+        android:id="@+id/cb2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/ct2"
+        custom:cicleWidth="10dp"
+        custom:firstColor="#ff0000"
+        android:visibility="gone"
+        custom:secondColor="#303F9F"
+        custom:speed="20" />
+
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/cb2"
+        android:text="bb" />
 
 </RelativeLayout>

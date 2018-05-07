@@ -25,9 +25,9 @@
 
     <!-- 自定义view CustomTitleView -->
     <!--<declare-styleable name="CustomTitleView">-->
-        <!--<attr name="titleText" format="string" />-->
-        <!--<attr name="titleTextColor" format="color" />-->
-        <!--<attr name="titleTextSize" format="dimension" />-->
+    <!--<attr name="titleText" format="string" />-->
+    <!--<attr name="titleTextColor" format="color" />-->
+    <!--<attr name="titleTextSize" format="dimension" />-->
     <!--</declare-styleable>-->
 
     <declare-styleable name="CustomTitleView2">
@@ -40,5 +40,21 @@
             <enum name="center" value="1" />
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="firstColor" format="color" />
+        <attr name="secondColor" format="color" />
+        <attr name="cicleWidth" format="dimension" />
+        <attr name="speed" format="integer" />
+    </declare-styleable>
+
+    <!-- 自定义flowLayout -->
+    <style name="text_flat_01">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
 
 </resources>

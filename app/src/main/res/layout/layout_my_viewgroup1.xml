@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.neil.demo.widget.restart.MyViewGroup1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff00ff">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ff0000"
+        android:text="第一个VIEW" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#00ff00"
+        android:text="第二个VIEW" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#0000ff"
+        android:text="第三个VIEW" />
+
+</com.neil.demo.widget.restart.MyViewGroup1>

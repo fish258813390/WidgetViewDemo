@@ -19,9 +19,9 @@ import android.view.View;
 import com.neil.demo.R;
 
 /**
- * Created by neil on 2018/4/23 0023.
+ * 自定义View 包含ImageView和TextView 居中显示
+ * Created by neil on 2018/4/23
  */
-
 public class CustomTitleView2 extends View {
 
     private Bitmap mImage;
@@ -156,7 +156,7 @@ public class CustomTitleView2 extends View {
             // fitxy
             canvas.drawBitmap(mImage, null, rect, mPaint);
         } else {
-            // 计算居中的矩形范围
+            // center 计算居中的矩形范围
             rect.left = mWidth / 2 - mImage.getWidth() / 2; // (mWidth - mImage.getWidth()) /2
             rect.top = (mHeight - mTextBound.height()) / 2 - mImage.getHeight() / 2;  // (mHeight - mTextBound - mImage.getHeight)/2
             rect.right = mWidth / 2 + mImage.getWidth() / 2;
