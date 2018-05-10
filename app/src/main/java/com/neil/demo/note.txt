@@ -1,0 +1,12 @@
+View 的时间分发机制：
+MotionEvent:点击事件
+
+传递:dispatchTouchEvent(),表示事件分发，返回true，表示事件不继续分发，事件被消费；返回false，继续往下分发
+拦截:onInterceptTouchEvent(),表示是否拦截当前事件，返回false表示不拦截当前事件，这时事件就会继续传递给它的子元素，
+    接着子元素的dispatchTouchEvent()方法就会被调用，
+消费:onTouchEvent()函数 和 OnTouchListener(),在dispatchTouchEvent方法中调用，
+    用来处理点击事件，返回结果表示是否消耗当前事件
+
+点击事件的传递过程：
+    当一个点击事件产生后，它的传递过程遵循如下顺序：Activity -> Window -> View
+

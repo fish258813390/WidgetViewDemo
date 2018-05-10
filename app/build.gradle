@@ -33,4 +33,7 @@ dependencies {
 
     // BaseRecyclerViewAdapterHelper
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.16'
+
+    // 沉浸式
+    compile 'com.gyf.barlibrary:barlibrary:2.2.7'
 }
