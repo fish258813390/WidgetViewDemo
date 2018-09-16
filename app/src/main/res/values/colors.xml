@@ -23,4 +23,9 @@
 
     <color name="gray">#999</color>
     <color name="ss">#20000000</color>
+
+    <!-- 自定义loadingView -->
+    <color name="default_edge_color">#89afaeae</color>
+    <color name="default_ring_color">#fc7272</color>
+
 </resources>
