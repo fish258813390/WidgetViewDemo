@@ -11,6 +11,7 @@ import com.neil.demo.greendao.Meizi;
 import com.neil.demo.greendao.MeiziDaoUtils;
 import com.neil.demo.view.RTButton;
 import com.neil.demo.view.RTLayout;
+import com.neil.demo.widget.jiuyue.loading.LofterProgressView;
 
 /**
  * Created by neil on 2018/5/10 0010.
@@ -20,6 +21,7 @@ public class ViewClickActivity extends AppCompatActivity {
 
     private RTLayout mRTLayout;
     private RTButton mRTButton;
+    private LofterProgressView lofterProgressView;
 
 
     @Override
@@ -33,6 +35,8 @@ public class ViewClickActivity extends AppCompatActivity {
     protected void initView() {
         mRTLayout = findViewById(R.id.myLayout);
         mRTButton = findViewById(R.id.myButton);
+        lofterProgressView = findViewById(R.id.pb_view);
+        lofterProgressView.setPercent(30);
 //        mRTButton.setOnTouchListener(new View.OnTouchListener() {
 //            @Override
 //            public boolean onTouch(View v, MotionEvent event) {
