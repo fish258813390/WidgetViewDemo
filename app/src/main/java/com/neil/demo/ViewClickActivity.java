@@ -7,6 +7,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
 
+import com.neil.demo.greendao.Meizi;
+import com.neil.demo.greendao.MeiziDaoUtils;
 import com.neil.demo.view.RTButton;
 import com.neil.demo.view.RTLayout;
 
@@ -51,13 +53,17 @@ public class ViewClickActivity extends AppCompatActivity {
 //            }
 //        });
 //
-//        mRTButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(ViewClickActivity.this,"111",Toast.LENGTH_SHORT).show();
-//                System.out.println("RTButton --  onClick!");
-//            }
-//        });
+        mRTButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ViewClickActivity.this,"111",Toast.LENGTH_SHORT).show();
+                System.out.println("RTButton --  onClick!");
+                Meizi meizi = new Meizi();
+                meizi.set_id(1002l);
+                meizi.setUrl("http://baidu.jpg");
+                new MeiziDaoUtils(ViewClickActivity.this).insertMeizi(meizi);
+            }
+        });
     }
 
     @Override
